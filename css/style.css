@@ -1,0 +1,172 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 40px
+	margin-bottom: 0;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.hero {
+	text-align: center;
+	color: white;
+	background-color: skyblue;
+	background-image: url(../images/hero1.jpg);
+	background-size: cover;
+	padding: 100px 0;
+	
+/*	alternatively, the longform code can be:;
+	padding-top: 100px;
+	padding-bottom:100px;
+	padding-left: 0px;
+	padding-right: 0px;*/
+}
+
+nav {
+	background-color: black;
+	background-size: cover;
+	text-align: center;
+	padding: 30px;
+
+}
+
+nav ul {
+display: flex;
+justify-content: space-between;
+list-style: none;
+width: 80%;
+margin: 0 auto;
+
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+}
+
+nav li {
+margin-top: 30px;
+}
+
+
+.feature {
+	background-color: tomato;
+	text-align: center;
+	padding: 50px;
+	flex-basis: 33%;
+	flex-wrap: wrap;
+}
+
+.container {
+width: 80%;
+margin: 0 auto; /*helps to centralise container*/
+display: flex;
+justify-content: space-between;
+flex-wrap:wrap;
+}
+
+.box {
+	flex-grow:0;
+	flex-basis: 33%;
+	flex-wrap: wrap;
+	padding: 20px;
+	}
+
+.box img {
+	height: 50px;
+	width: auto;
+}
+
+@media (max-width: 800px) {
+	.box {
+		flex-basis: 100%;
+	}
+}
+
+.media {
+
+	padding: 40px;
+}
+
+.media-left {
+	flex-basis: 45%;
+	padding-right: 40px;
+}
+
+.media-right {
+	flex-basis: 45%;
+}
+
+.media-right img {
+	width: 100%;/* image will be kept to the size of the container*/
+}
+
+@media (max-width: 800px) {
+	.media-left, .media-right {
+		flex-basis: 100%;
+	}
+}
+
+.blog {
+	background-color: tomato;
+	text-align:center;
+	padding: 50px;
+	flex-basis:33%;
+	flex-wrap: wrap;
+}
+
+/*.feature {
+	background-color: tomato;
+	text-align: center;
+	padding: 50px;
+	flex-basis: 33%;
+	flex-wrap: wrap;
+}
+*/
+
+.review {
+	text-align: center;
+	padding:50px;
+}
+
+.author {
+	width: 300px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.author img {
+	float: left;
+	border-radius: 90%;
+	width: 120px;
+	height: auto;
+	padding-right: 20px;
+}
+
+.author h2 {
+	margin-bottom: 20px;
+}
+
+.footer {
+	text-align: center;
+	padding: 60px, 0;
+	flex-basis :100%
+	flex-wrap: wrap;
+}
